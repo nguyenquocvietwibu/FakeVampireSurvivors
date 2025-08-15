@@ -119,7 +119,7 @@ public class GameInputReader : MonoBehaviour, GameInput.IGameMenuActions, GameIn
         switch (context.phase)
         {
             case InputActionPhase.Performed:
-                Debug.Log("Moved");
+                //Debug.Log("Game Input Moved");
                 GameplayMoved?.Invoke(context.ReadValue<Vector2>());
                 break;
             case InputActionPhase.Canceled:

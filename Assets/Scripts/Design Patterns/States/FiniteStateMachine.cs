@@ -30,6 +30,6 @@ public class FiniteStateMachine
 
     public void UpdateState()
     {
-        _currentState?.UpdateState();
+        _currentState.UpdateState();
     }
 }

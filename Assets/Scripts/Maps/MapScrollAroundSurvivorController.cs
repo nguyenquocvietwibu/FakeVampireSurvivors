@@ -42,11 +42,11 @@ public class MapScrollAroundSurvivorController : MonoBehaviour
 
     private void OnEnable()
     {
-        SurvivorEventManager.SurvivorPositionChanged += OnChangeSurvivorPosition;
+        SurvivorPositionCalculator.SurvivorPositionChanged += OnChangeSurvivorPosition;
     }
     private void OnDisable()
     {
-        SurvivorEventManager.SurvivorPositionChanged -= OnChangeSurvivorPosition;
+        SurvivorPositionCalculator.SurvivorPositionChanged -= OnChangeSurvivorPosition;
     }
 
     private void OnChangeSurvivorPosition(Vector2 changedSurvivorPosition)

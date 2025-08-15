@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SurvivorMovementCalculator : MonoBehaviour
+public class SurvivorMovementCalculator : MovementCalculator
 {
-    [SerializeField] private Vector2 _movement;
-    public Vector2 movement => _movement;
 
     private void OnEnable()
     {
@@ -19,6 +17,6 @@ public class SurvivorMovementCalculator : MonoBehaviour
 
     private void OnCalculateMovement(Vector2 movement)
     {
-        _movement = movement;
+        _normalizedMovement = movement;
     }
 }

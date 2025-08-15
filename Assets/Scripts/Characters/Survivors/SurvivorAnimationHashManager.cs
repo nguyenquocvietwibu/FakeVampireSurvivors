@@ -10,7 +10,7 @@ public enum SurvivorAnimmation
     Idle,
 }
 
-public class SurvivorAnimationHashManager : MonoBehaviour
+public class SurvivorAnimationHash : MonoBehaviour
 {
     [SerializeField] AnimationClip _walk;
     [SerializeField] AnimationClip _idle;
